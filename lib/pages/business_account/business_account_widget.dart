@@ -62,7 +62,7 @@ class _BusinessAccountWidgetState extends State<BusinessAccountWidget> {
             style: FlutterFlowTheme.of(context).headlineMedium.override(
                   fontFamily: 'Roboto',
                   color: Colors.white,
-                  fontSize: 22.0,
+                  fontSize: 18.0,
                   letterSpacing: 0.0,
                 ),
           ),
@@ -91,12 +91,12 @@ class _BusinessAccountWidgetState extends State<BusinessAccountWidget> {
                     ),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
-                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      mainAxisAlignment: MainAxisAlignment.start,
                       children: [
                         Expanded(
                           child: Padding(
                             padding: const EdgeInsetsDirectional.fromSTEB(
-                                0.0, 5.0, 0.0, 5.0),
+                                5.0, 5.0, 0.0, 5.0),
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
                               crossAxisAlignment: CrossAxisAlignment.start,
@@ -149,6 +149,7 @@ class _BusinessAccountWidgetState extends State<BusinessAccountWidget> {
                                   mainAxisSize: MainAxisSize.max,
                                   children: [
                                     Expanded(
+                                      flex: 1,
                                       child: FFButtonWidget(
                                         onPressed: () {
                                           print('Button pressed ...');
@@ -161,7 +162,7 @@ class _BusinessAccountWidgetState extends State<BusinessAccountWidget> {
                                           height: 40.0,
                                           padding:
                                               const EdgeInsetsDirectional.fromSTEB(
-                                                  16.0, 0.0, 16.0, 0.0),
+                                                  10.0, 0.0, 10.0, 0.0),
                                           iconPadding:
                                               const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 0.0, 0.0, 0.0),
@@ -181,41 +182,37 @@ class _BusinessAccountWidgetState extends State<BusinessAccountWidget> {
                                         ),
                                       ),
                                     ),
-                                    Flexible(
-                                      child: Align(
-                                        alignment:
-                                            const AlignmentDirectional(1.0, 0.0),
-                                        child: FFButtonWidget(
-                                          onPressed: () async {
-                                            context
-                                                .pushNamed('catalogsDetails');
-                                          },
-                                          text: FFLocalizations.of(context)
-                                              .getText(
-                                            '8krjlhmp' /* Add to  Cart */,
-                                          ),
-                                          options: FFButtonOptions(
-                                            height: 40.0,
-                                            padding:
-                                                const EdgeInsetsDirectional.fromSTEB(
-                                                    16.0, 0.0, 16.0, 0.0),
-                                            iconPadding:
-                                                const EdgeInsetsDirectional.fromSTEB(
-                                                    0.0, 0.0, 0.0, 0.0),
-                                            color: FlutterFlowTheme.of(context)
-                                                .info,
-                                            textStyle:
-                                                FlutterFlowTheme.of(context)
-                                                    .titleSmall
-                                                    .override(
-                                                      fontFamily: 'Roboto',
-                                                      color: Colors.white,
-                                                      letterSpacing: 0.0,
-                                                    ),
-                                            elevation: 0.0,
-                                            borderRadius:
-                                                BorderRadius.circular(12.0),
-                                          ),
+                                    Align(
+                                      alignment: const AlignmentDirectional(1.0, 0.0),
+                                      child: FFButtonWidget(
+                                        onPressed: () async {
+                                          context.pushNamed('catalogsDetails');
+                                        },
+                                        text:
+                                            FFLocalizations.of(context).getText(
+                                          '8krjlhmp' /* Add to  Cart */,
+                                        ),
+                                        options: FFButtonOptions(
+                                          height: 40.0,
+                                          padding:
+                                              const EdgeInsetsDirectional.fromSTEB(
+                                                  16.0, 0.0, 16.0, 0.0),
+                                          iconPadding:
+                                              const EdgeInsetsDirectional.fromSTEB(
+                                                  0.0, 0.0, 0.0, 0.0),
+                                          color:
+                                              FlutterFlowTheme.of(context).info,
+                                          textStyle:
+                                              FlutterFlowTheme.of(context)
+                                                  .titleSmall
+                                                  .override(
+                                                    fontFamily: 'Roboto',
+                                                    color: Colors.white,
+                                                    letterSpacing: 0.0,
+                                                  ),
+                                          elevation: 0.0,
+                                          borderRadius:
+                                              BorderRadius.circular(12.0),
                                         ),
                                       ),
                                     ),
@@ -230,23 +227,23 @@ class _BusinessAccountWidgetState extends State<BusinessAccountWidget> {
                         Column(
                           mainAxisSize: MainAxisSize.max,
                           children: [
-                            Container(
-                              decoration: const BoxDecoration(),
-                              child: ClipRRect(
-                                borderRadius: BorderRadius.circular(8.0),
-                                child: Image.network(
-                                  'https://images.unsplash.com/photo-1511973774220-37fab967aba0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHNlYXJjaHw5fHxnYXN8ZW58MHx8fHwxNzMwODA0NjAwfDA&ixlib=rb-4.0.3&q=80&w=1080',
-                                  width: 120.0,
-                                  height: 120.0,
-                                  fit: BoxFit.cover,
+                            Expanded(
+                              child: Container(
+                                decoration: const BoxDecoration(),
+                                child: ClipRRect(
+                                  borderRadius: BorderRadius.circular(8.0),
+                                  child: Image.network(
+                                    'https://images.unsplash.com/photo-1460925895917-afdab827c52f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHNlYXJjaHwxfHx3ZWJ8ZW58MHx8fHwxNzMxMzExOTc5fDA&ixlib=rb-4.0.3&q=80&w=1080',
+                                    width: 132.0,
+                                    height: 226.0,
+                                    fit: BoxFit.cover,
+                                  ),
                                 ),
                               ),
                             ),
                           ],
                         ),
-                      ]
-                          .divide(const SizedBox(width: 10.0))
-                          .around(const SizedBox(width: 10.0)),
+                      ].divide(const SizedBox(width: 10.0)),
                     ),
                   ),
                 ),
@@ -265,19 +262,19 @@ class _BusinessAccountWidgetState extends State<BusinessAccountWidget> {
                     ),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
-                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      mainAxisAlignment: MainAxisAlignment.start,
                       children: [
                         Expanded(
                           child: Padding(
                             padding: const EdgeInsetsDirectional.fromSTEB(
-                                0.0, 5.0, 0.0, 5.0),
+                                5.0, 5.0, 0.0, 5.0),
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text(
                                   FFLocalizations.of(context).getText(
-                                    'we2hkb52' /* Mkopo kwa Vikundi */,
+                                    'kp749s05' /* Web Development package */,
                                   ),
                                   style: FlutterFlowTheme.of(context)
                                       .titleLarge
@@ -291,7 +288,7 @@ class _BusinessAccountWidgetState extends State<BusinessAccountWidget> {
                                 ),
                                 Text(
                                   FFLocalizations.of(context).getText(
-                                    '6f9lwhku' /* Tsh 1,000,000 */,
+                                    'jutemyae' /* Tsh 25,000 */,
                                   ),
                                   style: FlutterFlowTheme.of(context)
                                       .titleMedium
@@ -304,7 +301,7 @@ class _BusinessAccountWidgetState extends State<BusinessAccountWidget> {
                                 ),
                                 Text(
                                   FFLocalizations.of(context).getText(
-                                    'oipqzqlv' /* Karibu tukuhudumie leo Express */,
+                                    'kdsfv3ax' /* Okoa muda kwakutumia Gas, Ondo... */,
                                   ),
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
@@ -323,19 +320,20 @@ class _BusinessAccountWidgetState extends State<BusinessAccountWidget> {
                                   mainAxisSize: MainAxisSize.max,
                                   children: [
                                     Expanded(
+                                      flex: 1,
                                       child: FFButtonWidget(
                                         onPressed: () {
                                           print('Button pressed ...');
                                         },
                                         text:
                                             FFLocalizations.of(context).getText(
-                                          'fvbj73it' /* Buy */,
+                                          '6tmkpfjf' /* Buy */,
                                         ),
                                         options: FFButtonOptions(
                                           height: 40.0,
                                           padding:
                                               const EdgeInsetsDirectional.fromSTEB(
-                                                  16.0, 0.0, 16.0, 0.0),
+                                                  10.0, 0.0, 10.0, 0.0),
                                           iconPadding:
                                               const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 0.0, 0.0, 0.0),
@@ -355,40 +353,37 @@ class _BusinessAccountWidgetState extends State<BusinessAccountWidget> {
                                         ),
                                       ),
                                     ),
-                                    Flexible(
-                                      child: Align(
-                                        alignment:
-                                            const AlignmentDirectional(1.0, 0.0),
-                                        child: FFButtonWidget(
-                                          onPressed: () {
-                                            print('Button pressed ...');
-                                          },
-                                          text: FFLocalizations.of(context)
-                                              .getText(
-                                            '5z4icahm' /* Add to  Cart */,
-                                          ),
-                                          options: FFButtonOptions(
-                                            height: 40.0,
-                                            padding:
-                                                const EdgeInsetsDirectional.fromSTEB(
-                                                    16.0, 0.0, 16.0, 0.0),
-                                            iconPadding:
-                                                const EdgeInsetsDirectional.fromSTEB(
-                                                    0.0, 0.0, 0.0, 0.0),
-                                            color: FlutterFlowTheme.of(context)
-                                                .info,
-                                            textStyle:
-                                                FlutterFlowTheme.of(context)
-                                                    .titleSmall
-                                                    .override(
-                                                      fontFamily: 'Roboto',
-                                                      color: Colors.white,
-                                                      letterSpacing: 0.0,
-                                                    ),
-                                            elevation: 0.0,
-                                            borderRadius:
-                                                BorderRadius.circular(12.0),
-                                          ),
+                                    Align(
+                                      alignment: const AlignmentDirectional(1.0, 0.0),
+                                      child: FFButtonWidget(
+                                        onPressed: () async {
+                                          context.pushNamed('catalogsDetails');
+                                        },
+                                        text:
+                                            FFLocalizations.of(context).getText(
+                                          '1zsf393l' /* Add to  Cart */,
+                                        ),
+                                        options: FFButtonOptions(
+                                          height: 40.0,
+                                          padding:
+                                              const EdgeInsetsDirectional.fromSTEB(
+                                                  16.0, 0.0, 16.0, 0.0),
+                                          iconPadding:
+                                              const EdgeInsetsDirectional.fromSTEB(
+                                                  0.0, 0.0, 0.0, 0.0),
+                                          color:
+                                              FlutterFlowTheme.of(context).info,
+                                          textStyle:
+                                              FlutterFlowTheme.of(context)
+                                                  .titleSmall
+                                                  .override(
+                                                    fontFamily: 'Roboto',
+                                                    color: Colors.white,
+                                                    letterSpacing: 0.0,
+                                                  ),
+                                          elevation: 0.0,
+                                          borderRadius:
+                                              BorderRadius.circular(12.0),
                                         ),
                                       ),
                                     ),
@@ -403,23 +398,23 @@ class _BusinessAccountWidgetState extends State<BusinessAccountWidget> {
                         Column(
                           mainAxisSize: MainAxisSize.max,
                           children: [
-                            Container(
-                              decoration: const BoxDecoration(),
-                              child: ClipRRect(
-                                borderRadius: BorderRadius.circular(8.0),
-                                child: Image.network(
-                                  'https://images.unsplash.com/photo-1553729459-efe14ef6055d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHNlYXJjaHwxMHx8bG9hbnxlbnwwfHx8fDE3MzA4MDQ4Mjd8MA&ixlib=rb-4.0.3&q=80&w=1080',
-                                  width: 120.0,
-                                  height: 120.0,
-                                  fit: BoxFit.cover,
+                            Expanded(
+                              child: Container(
+                                decoration: const BoxDecoration(),
+                                child: ClipRRect(
+                                  borderRadius: BorderRadius.circular(8.0),
+                                  child: Image.network(
+                                    'https://images.unsplash.com/photo-1460925895917-afdab827c52f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHNlYXJjaHwxfHx3ZWJ8ZW58MHx8fHwxNzMxMzExOTc5fDA&ixlib=rb-4.0.3&q=80&w=1080',
+                                    width: 132.0,
+                                    height: 226.0,
+                                    fit: BoxFit.cover,
+                                  ),
                                 ),
                               ),
                             ),
                           ],
                         ),
-                      ]
-                          .divide(const SizedBox(width: 10.0))
-                          .around(const SizedBox(width: 10.0)),
+                      ].divide(const SizedBox(width: 10.0)),
                     ),
                   ),
                 ),
@@ -438,19 +433,19 @@ class _BusinessAccountWidgetState extends State<BusinessAccountWidget> {
                     ),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
-                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      mainAxisAlignment: MainAxisAlignment.start,
                       children: [
                         Expanded(
                           child: Padding(
                             padding: const EdgeInsetsDirectional.fromSTEB(
-                                0.0, 5.0, 0.0, 5.0),
+                                5.0, 5.0, 0.0, 5.0),
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text(
                                   FFLocalizations.of(context).getText(
-                                    '6yxtk8p8' /* Lipa Mdogo Mdogo Gas */,
+                                    'l6p9o8t8' /* Web Development package */,
                                   ),
                                   style: FlutterFlowTheme.of(context)
                                       .titleLarge
@@ -464,7 +459,7 @@ class _BusinessAccountWidgetState extends State<BusinessAccountWidget> {
                                 ),
                                 Text(
                                   FFLocalizations.of(context).getText(
-                                    'ait0aovq' /* Tsh 25,000 */,
+                                    'iaqopjsl' /* Tsh 25,000 */,
                                   ),
                                   style: FlutterFlowTheme.of(context)
                                       .titleMedium
@@ -477,7 +472,7 @@ class _BusinessAccountWidgetState extends State<BusinessAccountWidget> {
                                 ),
                                 Text(
                                   FFLocalizations.of(context).getText(
-                                    '5yjwxz35' /* Okoa muda kwakutumia Gas, Ondo... */,
+                                    'vxvo67aq' /* Okoa muda kwakutumia Gas, Ondo... */,
                                   ),
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
@@ -496,19 +491,20 @@ class _BusinessAccountWidgetState extends State<BusinessAccountWidget> {
                                   mainAxisSize: MainAxisSize.max,
                                   children: [
                                     Expanded(
+                                      flex: 1,
                                       child: FFButtonWidget(
                                         onPressed: () {
                                           print('Button pressed ...');
                                         },
                                         text:
                                             FFLocalizations.of(context).getText(
-                                          'qzfx3ncr' /* Buy */,
+                                          'ohum47uk' /* Buy */,
                                         ),
                                         options: FFButtonOptions(
                                           height: 40.0,
                                           padding:
                                               const EdgeInsetsDirectional.fromSTEB(
-                                                  16.0, 0.0, 16.0, 0.0),
+                                                  10.0, 0.0, 10.0, 0.0),
                                           iconPadding:
                                               const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 0.0, 0.0, 0.0),
@@ -528,40 +524,37 @@ class _BusinessAccountWidgetState extends State<BusinessAccountWidget> {
                                         ),
                                       ),
                                     ),
-                                    Flexible(
-                                      child: Align(
-                                        alignment:
-                                            const AlignmentDirectional(1.0, 0.0),
-                                        child: FFButtonWidget(
-                                          onPressed: () {
-                                            print('Button pressed ...');
-                                          },
-                                          text: FFLocalizations.of(context)
-                                              .getText(
-                                            'n4u6j7ce' /* Add to  Cart */,
-                                          ),
-                                          options: FFButtonOptions(
-                                            height: 40.0,
-                                            padding:
-                                                const EdgeInsetsDirectional.fromSTEB(
-                                                    16.0, 0.0, 16.0, 0.0),
-                                            iconPadding:
-                                                const EdgeInsetsDirectional.fromSTEB(
-                                                    0.0, 0.0, 0.0, 0.0),
-                                            color: FlutterFlowTheme.of(context)
-                                                .info,
-                                            textStyle:
-                                                FlutterFlowTheme.of(context)
-                                                    .titleSmall
-                                                    .override(
-                                                      fontFamily: 'Roboto',
-                                                      color: Colors.white,
-                                                      letterSpacing: 0.0,
-                                                    ),
-                                            elevation: 0.0,
-                                            borderRadius:
-                                                BorderRadius.circular(12.0),
-                                          ),
+                                    Align(
+                                      alignment: const AlignmentDirectional(1.0, 0.0),
+                                      child: FFButtonWidget(
+                                        onPressed: () async {
+                                          context.pushNamed('catalogsDetails');
+                                        },
+                                        text:
+                                            FFLocalizations.of(context).getText(
+                                          'o1rfrax2' /* Add to  Cart */,
+                                        ),
+                                        options: FFButtonOptions(
+                                          height: 40.0,
+                                          padding:
+                                              const EdgeInsetsDirectional.fromSTEB(
+                                                  16.0, 0.0, 16.0, 0.0),
+                                          iconPadding:
+                                              const EdgeInsetsDirectional.fromSTEB(
+                                                  0.0, 0.0, 0.0, 0.0),
+                                          color:
+                                              FlutterFlowTheme.of(context).info,
+                                          textStyle:
+                                              FlutterFlowTheme.of(context)
+                                                  .titleSmall
+                                                  .override(
+                                                    fontFamily: 'Roboto',
+                                                    color: Colors.white,
+                                                    letterSpacing: 0.0,
+                                                  ),
+                                          elevation: 0.0,
+                                          borderRadius:
+                                              BorderRadius.circular(12.0),
                                         ),
                                       ),
                                     ),
@@ -576,23 +569,23 @@ class _BusinessAccountWidgetState extends State<BusinessAccountWidget> {
                         Column(
                           mainAxisSize: MainAxisSize.max,
                           children: [
-                            Container(
-                              decoration: const BoxDecoration(),
-                              child: ClipRRect(
-                                borderRadius: BorderRadius.circular(8.0),
-                                child: Image.network(
-                                  'https://images.unsplash.com/photo-1511973774220-37fab967aba0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHNlYXJjaHw5fHxnYXN8ZW58MHx8fHwxNzMwODA0NjAwfDA&ixlib=rb-4.0.3&q=80&w=1080',
-                                  width: 120.0,
-                                  height: 120.0,
-                                  fit: BoxFit.cover,
+                            Expanded(
+                              child: Container(
+                                decoration: const BoxDecoration(),
+                                child: ClipRRect(
+                                  borderRadius: BorderRadius.circular(8.0),
+                                  child: Image.network(
+                                    'https://images.unsplash.com/photo-1460925895917-afdab827c52f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHNlYXJjaHwxfHx3ZWJ8ZW58MHx8fHwxNzMxMzExOTc5fDA&ixlib=rb-4.0.3&q=80&w=1080',
+                                    width: 132.0,
+                                    height: 226.0,
+                                    fit: BoxFit.cover,
+                                  ),
                                 ),
                               ),
                             ),
                           ],
                         ),
-                      ]
-                          .divide(const SizedBox(width: 10.0))
-                          .around(const SizedBox(width: 10.0)),
+                      ].divide(const SizedBox(width: 10.0)),
                     ),
                   ),
                 ),
@@ -611,19 +604,19 @@ class _BusinessAccountWidgetState extends State<BusinessAccountWidget> {
                     ),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
-                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      mainAxisAlignment: MainAxisAlignment.start,
                       children: [
                         Expanded(
                           child: Padding(
                             padding: const EdgeInsetsDirectional.fromSTEB(
-                                0.0, 5.0, 0.0, 5.0),
+                                5.0, 5.0, 0.0, 5.0),
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text(
                                   FFLocalizations.of(context).getText(
-                                    '36jbhie8' /* Gas Fasta */,
+                                    'sjgrnr5s' /* Web Development package */,
                                   ),
                                   style: FlutterFlowTheme.of(context)
                                       .titleLarge
@@ -637,7 +630,7 @@ class _BusinessAccountWidgetState extends State<BusinessAccountWidget> {
                                 ),
                                 Text(
                                   FFLocalizations.of(context).getText(
-                                    '80ocwfzk' /* Tsh 25,000 */,
+                                    'm57l9wjy' /* Tsh 25,000 */,
                                   ),
                                   style: FlutterFlowTheme.of(context)
                                       .titleMedium
@@ -650,7 +643,7 @@ class _BusinessAccountWidgetState extends State<BusinessAccountWidget> {
                                 ),
                                 Text(
                                   FFLocalizations.of(context).getText(
-                                    'saz8g914' /* Okoa muda kwakutumia Gas, Ondo... */,
+                                    'rkf89vec' /* Okoa muda kwakutumia Gas, Ondo... */,
                                   ),
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
@@ -669,19 +662,20 @@ class _BusinessAccountWidgetState extends State<BusinessAccountWidget> {
                                   mainAxisSize: MainAxisSize.max,
                                   children: [
                                     Expanded(
+                                      flex: 1,
                                       child: FFButtonWidget(
                                         onPressed: () {
                                           print('Button pressed ...');
                                         },
                                         text:
                                             FFLocalizations.of(context).getText(
-                                          'xs0aqsz0' /* Buy */,
+                                          '4y59yhkg' /* Buy */,
                                         ),
                                         options: FFButtonOptions(
                                           height: 40.0,
                                           padding:
                                               const EdgeInsetsDirectional.fromSTEB(
-                                                  16.0, 0.0, 16.0, 0.0),
+                                                  10.0, 0.0, 10.0, 0.0),
                                           iconPadding:
                                               const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 0.0, 0.0, 0.0),
@@ -701,40 +695,37 @@ class _BusinessAccountWidgetState extends State<BusinessAccountWidget> {
                                         ),
                                       ),
                                     ),
-                                    Flexible(
-                                      child: Align(
-                                        alignment:
-                                            const AlignmentDirectional(1.0, 0.0),
-                                        child: FFButtonWidget(
-                                          onPressed: () {
-                                            print('Button pressed ...');
-                                          },
-                                          text: FFLocalizations.of(context)
-                                              .getText(
-                                            '2ymuozlf' /* Add to  Cart */,
-                                          ),
-                                          options: FFButtonOptions(
-                                            height: 40.0,
-                                            padding:
-                                                const EdgeInsetsDirectional.fromSTEB(
-                                                    16.0, 0.0, 16.0, 0.0),
-                                            iconPadding:
-                                                const EdgeInsetsDirectional.fromSTEB(
-                                                    0.0, 0.0, 0.0, 0.0),
-                                            color: FlutterFlowTheme.of(context)
-                                                .info,
-                                            textStyle:
-                                                FlutterFlowTheme.of(context)
-                                                    .titleSmall
-                                                    .override(
-                                                      fontFamily: 'Roboto',
-                                                      color: Colors.white,
-                                                      letterSpacing: 0.0,
-                                                    ),
-                                            elevation: 0.0,
-                                            borderRadius:
-                                                BorderRadius.circular(12.0),
-                                          ),
+                                    Align(
+                                      alignment: const AlignmentDirectional(1.0, 0.0),
+                                      child: FFButtonWidget(
+                                        onPressed: () async {
+                                          context.pushNamed('catalogsDetails');
+                                        },
+                                        text:
+                                            FFLocalizations.of(context).getText(
+                                          'uhy6pllr' /* Add to  Cart */,
+                                        ),
+                                        options: FFButtonOptions(
+                                          height: 40.0,
+                                          padding:
+                                              const EdgeInsetsDirectional.fromSTEB(
+                                                  16.0, 0.0, 16.0, 0.0),
+                                          iconPadding:
+                                              const EdgeInsetsDirectional.fromSTEB(
+                                                  0.0, 0.0, 0.0, 0.0),
+                                          color:
+                                              FlutterFlowTheme.of(context).info,
+                                          textStyle:
+                                              FlutterFlowTheme.of(context)
+                                                  .titleSmall
+                                                  .override(
+                                                    fontFamily: 'Roboto',
+                                                    color: Colors.white,
+                                                    letterSpacing: 0.0,
+                                                  ),
+                                          elevation: 0.0,
+                                          borderRadius:
+                                              BorderRadius.circular(12.0),
                                         ),
                                       ),
                                     ),
@@ -749,23 +740,23 @@ class _BusinessAccountWidgetState extends State<BusinessAccountWidget> {
                         Column(
                           mainAxisSize: MainAxisSize.max,
                           children: [
-                            Container(
-                              decoration: const BoxDecoration(),
-                              child: ClipRRect(
-                                borderRadius: BorderRadius.circular(8.0),
-                                child: Image.network(
-                                  'https://images.unsplash.com/photo-1511973774220-37fab967aba0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHNlYXJjaHw5fHxnYXN8ZW58MHx8fHwxNzMwODA0NjAwfDA&ixlib=rb-4.0.3&q=80&w=1080',
-                                  width: 120.0,
-                                  height: 120.0,
-                                  fit: BoxFit.cover,
+                            Expanded(
+                              child: Container(
+                                decoration: const BoxDecoration(),
+                                child: ClipRRect(
+                                  borderRadius: BorderRadius.circular(8.0),
+                                  child: Image.network(
+                                    'https://images.unsplash.com/photo-1460925895917-afdab827c52f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHNlYXJjaHwxfHx3ZWJ8ZW58MHx8fHwxNzMxMzExOTc5fDA&ixlib=rb-4.0.3&q=80&w=1080',
+                                    width: 132.0,
+                                    height: 226.0,
+                                    fit: BoxFit.cover,
+                                  ),
                                 ),
                               ),
                             ),
                           ],
                         ),
-                      ]
-                          .divide(const SizedBox(width: 10.0))
-                          .around(const SizedBox(width: 10.0)),
+                      ].divide(const SizedBox(width: 10.0)),
                     ),
                   ),
                 ),

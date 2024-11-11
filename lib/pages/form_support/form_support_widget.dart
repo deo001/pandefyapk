@@ -68,12 +68,12 @@ class _FormSupportWidgetState extends State<FormSupportWidget> {
           ),
           title: Text(
             FFLocalizations.of(context).getText(
-              'ww8u1aw7' /* Creting Request */,
+              'jyk5ciqx' /* Creting Request */,
             ),
             style: FlutterFlowTheme.of(context).headlineMedium.override(
                   fontFamily: 'Roboto',
                   color: Colors.white,
-                  fontSize: 22.0,
+                  fontSize: 18.0,
                   letterSpacing: 0.0,
                 ),
           ),

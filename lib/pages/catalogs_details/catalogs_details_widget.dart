@@ -70,7 +70,7 @@ class _CatalogsDetailsWidgetState extends State<CatalogsDetailsWidget> {
                   style: FlutterFlowTheme.of(context).headlineMedium.override(
                         fontFamily: 'Roboto',
                         color: Colors.white,
-                        fontSize: 20.0,
+                        fontSize: 18.0,
                         letterSpacing: 0.0,
                         fontWeight: FontWeight.w500,
                       ),
@@ -105,7 +105,7 @@ class _CatalogsDetailsWidgetState extends State<CatalogsDetailsWidget> {
                               ClipRRect(
                                 borderRadius: BorderRadius.circular(8.0),
                                 child: Image.network(
-                                  'https://picsum.photos/seed/423/600',
+                                  'https://images.unsplash.com/photo-1613068687893-5e85b4638b56?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHNlYXJjaHwxMnx8d2ViJTIwZGVzaWdufGVufDB8fHx8MTczMTMxMjI4N3ww&ixlib=rb-4.0.3&q=80&w=1080',
                                   width: double.infinity,
                                   fit: BoxFit.cover,
                                 ),
@@ -118,7 +118,7 @@ class _CatalogsDetailsWidgetState extends State<CatalogsDetailsWidget> {
                               ClipRRect(
                                 borderRadius: BorderRadius.circular(8.0),
                                 child: Image.network(
-                                  'https://picsum.photos/seed/423/600',
+                                  'https://images.unsplash.com/photo-1460925895917-afdab827c52f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHNlYXJjaHwxfHx3ZWJ8ZW58MHx8fHwxNzMxMzExOTc5fDA&ixlib=rb-4.0.3&q=80&w=1080',
                                   width: double.infinity,
                                   fit: BoxFit.cover,
                                 ),
@@ -131,7 +131,7 @@ class _CatalogsDetailsWidgetState extends State<CatalogsDetailsWidget> {
                               ClipRRect(
                                 borderRadius: BorderRadius.circular(8.0),
                                 child: Image.network(
-                                  'https://picsum.photos/seed/423/600',
+                                  'https://images.unsplash.com/photo-1498050108023-c5249f4df085?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHNlYXJjaHwzfHx3ZWJ8ZW58MHx8fHwxNzMxMzExOTc5fDA&ixlib=rb-4.0.3&q=80&w=1080',
                                   width: double.infinity,
                                   fit: BoxFit.cover,
                                 ),
@@ -235,7 +235,7 @@ class _CatalogsDetailsWidgetState extends State<CatalogsDetailsWidget> {
                           print('Button pressed ...');
                         },
                         text: FFLocalizations.of(context).getText(
-                          '5918p0nq' /* Get */,
+                          '5918p0nq' /* Buy */,
                         ),
                         options: FFButtonOptions(
                           height: 40.0,
@@ -261,7 +261,7 @@ class _CatalogsDetailsWidgetState extends State<CatalogsDetailsWidget> {
                           print('Button pressed ...');
                         },
                         text: FFLocalizations.of(context).getText(
-                          'fps7mg3y' /* Save */,
+                          'fps7mg3y' /* Add To Cart */,
                         ),
                         options: FFButtonOptions(
                           height: 40.0,

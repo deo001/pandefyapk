@@ -233,8 +233,12 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'sw': '',
     },
   },
-  // offers
+  // awardes_offers
   {
+    '3cjh4wcy': {
+      'en': 'Home',
+      'sw': '',
+    },
     'efu993f5': {
       'en': 'Pandefy',
       'sw': '',
@@ -247,91 +251,75 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'Awarded',
       'sw': '',
     },
-    '03zq6zzo': {
-      'en': 'NAULI',
+    'wnxt1hgf': {
+      'en': 'PESABY HQ',
       'sw': '',
     },
-    'lax8ogv9': {
+    'dm4h98p0': {
       'en': 'Suppoerted by: Tambuu Motors and 3 others',
       'sw': '',
     },
-    '9einblxc': {
+    'uuu8i7n9': {
       'en': 'Awarded',
       'sw': '',
     },
-    'zwwu0zts': {
-      'en': '200,000',
+    'h770b1b3': {
+      'en': '2000',
       'sw': '',
     },
-    'ufk195l1': {
-      'en': 'Supported',
+    '1bs6z99g': {
+      'en': '5',
       'sw': '',
     },
-    'mph7tiv1': {
-      'en': '26',
-      'sw': '',
-    },
-    'meboqfvs': {
-      'en': '0',
-      'sw': '',
-    },
-    'txhi6g47': {
-      'en': 'Pins',
-      'sw': '',
-    },
-    'msmfeuei': {
-      'en': '11',
-      'sw': '',
-    },
-    'ka0kvu96': {
-      'en': 'Support',
-      'sw': '',
-    },
-    '1p01iau8': {
-      'en': 'MTAJI WA SALOON',
-      'sw': '',
-    },
-    'tqt9zhyr': {
-      'en': 'Suppoerted by:Serene Microfinance Ltd',
-      'sw': '',
-    },
-    'wyo67hns': {
-      'en': 'Funded',
-      'sw': '',
-    },
-    '7wkmso57': {
-      'en': '20,000',
-      'sw': '',
-    },
-    'cgjkd6xn': {
-      'en': '7',
-      'sw': '',
-    },
-    'fx4bcpz1': {
+    '7o7n4c8a': {
       'en': 'Join Us',
       'sw': '',
     },
-    'zglxkshn': {
-      'en': 'RESEARCH COST',
+    '93rxxd0b': {
+      'en': 'Printing Works',
       'sw': '',
     },
-    'ak7q7j75': {
-      'en': 'Suppoerted by:Serene Microfinance Ltd',
+    'bo2l3npo': {
+      'en': 'Suppoerted by: Tambuu Motors and 3 others',
       'sw': '',
     },
-    'i1o6dxe1': {
+    'vsgi9eeh': {
       'en': 'Waiting',
       'sw': '',
     },
-    'y7yd1y22': {
-      'en': '20,000',
+    'l2bdgqg9': {
+      'en': '200,000',
       'sw': '',
     },
-    'oxhbotgz': {
-      'en': '0',
+    'r9dw179n': {
+      'en': '7',
       'sw': '',
     },
-    'lmwnc5hz': {
+    'vlcli34g': {
+      'en': 'Join Us',
+      'sw': '',
+    },
+    '9mftczu2': {
+      'en': 'MTAJI WA SALOON',
+      'sw': '',
+    },
+    'kqaib2lb': {
+      'en': 'Suppoerted by: Africab and 3 others',
+      'sw': '',
+    },
+    'x5g43nyc': {
+      'en': 'Funded',
+      'sw': '',
+    },
+    'oigzzi4v': {
+      'en': '200,000',
+      'sw': '',
+    },
+    'i0y588jy': {
+      'en': '7',
+      'sw': '',
+    },
+    'hy9yyup2': {
       'en': 'Join Us',
       'sw': '',
     },
@@ -376,65 +364,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'sw': '',
     },
   },
-  // filter
-  {
-    'lgcgppdd': {
-      'en': 'Search',
-      'sw': '',
-    },
-    '0ofmtjsw': {
-      'en': 'PESABY HQ',
-      'sw': '',
-    },
-    'y5d88dbm': {
-      'en': 'Suppoerted by: Tambuu Motors and 3 others',
-      'sw': '',
-    },
-    '2zwr7e9c': {
-      'en': 'Waiting',
-      'sw': '',
-    },
-    '5ifmeqm4': {
-      'en': '200,000',
-      'sw': '',
-    },
-    'fryn01ap': {
-      'en': '7',
-      'sw': '',
-    },
-    'fsw9nz1m': {
-      'en': 'Join Us',
-      'sw': '',
-    },
-    's3k5p6kg': {
-      'en': 'MTAJI WA SALOON',
-      'sw': '',
-    },
-    '54kc3rxh': {
-      'en': 'Suppoerted by: Africab and 3 others',
-      'sw': '',
-    },
-    'uvcemozl': {
-      'en': 'Funded',
-      'sw': '',
-    },
-    'fkhqexz7': {
-      'en': '200,000',
-      'sw': '',
-    },
-    '8ey25u45': {
-      'en': '7',
-      'sw': '',
-    },
-    '7h4ab1up': {
-      'en': 'Join Us',
-      'sw': '',
-    },
-    'n4u7c8q2': {
-      'en': 'Home',
-      'sw': '',
-    },
-  },
   // catalogsDetails
   {
     'ag1rznxu': {
@@ -451,11 +380,11 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'sw': '',
     },
     '5918p0nq': {
-      'en': 'Get',
+      'en': 'Buy',
       'sw': '',
     },
     'fps7mg3y': {
-      'en': 'Save',
+      'en': 'Add To Cart',
       'sw': '',
     },
     'tcbpzp02': {
@@ -463,129 +392,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'sw': '',
     },
     'bexps334': {
-      'en': 'Home',
-      'sw': '',
-    },
-  },
-  // requests
-  {
-    'dx7istt2': {
-      'en': 'NAULI',
-      'sw': '',
-    },
-    'kcjegfk5': {
-      'en': 'Suppoerted by: Tambuu Motors and 3 others',
-      'sw': '',
-    },
-    'd4jlwo16': {
-      'en': 'Awarded',
-      'sw': '',
-    },
-    'eib5k62m': {
-      'en': '200,000',
-      'sw': '',
-    },
-    'wz3x0to4': {
-      'en': 'Supported',
-      'sw': '',
-    },
-    '1579ht3g': {
-      'en': '26',
-      'sw': '',
-    },
-    '1xswfovf': {
-      'en': '0',
-      'sw': '',
-    },
-    'bkiuyayj': {
-      'en': 'Pins',
-      'sw': '',
-    },
-    'gzd58qo2': {
-      'en': '11',
-      'sw': '',
-    },
-    'ifmnvpqq': {
-      'en': 'Support',
-      'sw': '',
-    },
-    'alk8zd7z': {
-      'en': 'MTAJI WA SALOON',
-      'sw': '',
-    },
-    'rbn5g9e1': {
-      'en': 'Suppoerted by:Serene Microfinance Ltd',
-      'sw': '',
-    },
-    '80ts7a1d': {
-      'en': 'Funded',
-      'sw': '',
-    },
-    'c8aedi1d': {
-      'en': '20,000',
-      'sw': '',
-    },
-    '08mor7nw': {
-      'en': '7',
-      'sw': '',
-    },
-    'hqkhisrx': {
-      'en': 'Join Us',
-      'sw': '',
-    },
-    'niiwjaou': {
-      'en': 'RESEARCH COST',
-      'sw': '',
-    },
-    '1375rvki': {
-      'en': 'Suppoerted by:Serene Microfinance Ltd',
-      'sw': '',
-    },
-    '17vrw1tc': {
-      'en': 'Waiting',
-      'sw': '',
-    },
-    'siztxa6r': {
-      'en': '20,000',
-      'sw': '',
-    },
-    'to34jr7m': {
-      'en': '0',
-      'sw': '',
-    },
-    'dy2tf9xi': {
-      'en': 'Join Us',
-      'sw': '',
-    },
-    't62kjtcq': {
-      'en': 'Printing Works',
-      'sw': '',
-    },
-    '4imlrc34': {
-      'en': 'Suppoerted by: Africab and 3 others',
-      'sw': '',
-    },
-    'bu2z6vjr': {
-      'en': 'Funded',
-      'sw': '',
-    },
-    'z6xpjxqe': {
-      'en': '20,000',
-      'sw': '',
-    },
-    'm362vr0p': {
-      'en': '0',
-      'sw': '',
-    },
-    'bm98771v': {
-      'en': 'Join Us',
-      'sw': '',
-    },
-    '0r5k46ux': {
-      'en': 'Requests',
-      'sw': '',
-    },
-    '7af1ulc8': {
       'en': 'Home',
       'sw': '',
     },
@@ -660,116 +466,164 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'Request',
       'sw': '',
     },
-    'kypeaw7g': {
+    'zd84hws8': {
       'en': 'NAULI',
       'sw': '',
     },
-    'y2t9o329': {
+    'yhog6jjd': {
       'en': 'Suppoerted by: Tambuu Motors and 3 others',
       'sw': '',
     },
-    'p9dj3uh1': {
+    'pms7pa9j': {
       'en': 'Awarded',
       'sw': '',
     },
-    'nsnt3ljk': {
+    '2syf823a': {
       'en': '200,000',
       'sw': '',
     },
-    'okwfuz3i': {
+    't285kjo3': {
       'en': 'Supported',
       'sw': '',
     },
-    'vyizetgr': {
+    'rrloxxho': {
       'en': '26',
       'sw': '',
     },
-    '3ofy3yjj': {
+    '1mbjhv14': {
       'en': '0',
       'sw': '',
     },
-    '1yfqjdxo': {
+    'pd67c49s': {
       'en': 'Pins',
       'sw': '',
     },
-    'zcxgjqd2': {
+    'ao9z7njq': {
       'en': '11',
       'sw': '',
     },
-    '2x1a1v1n': {
+    'vq468eto': {
       'en': 'Support',
       'sw': '',
     },
-    'pj75vi1v': {
+    '8fdd94zt': {
       'en': 'MTAJI WA SALOON',
       'sw': '',
     },
-    'grx5ohw0': {
-      'en': 'Suppoerted by:Serene Microfinance Ltd',
+    'sce6ia9o': {
+      'en': 'Suppoerted by: Tambuu Motors and 3 others',
       'sw': '',
     },
-    'vf6yia9q': {
-      'en': 'Funded',
+    'qgf36gae': {
+      'en': 'Awarded',
       'sw': '',
     },
-    'jdzvuds4': {
-      'en': '20,000',
+    'j4nmuw8z': {
+      'en': '200,000',
       'sw': '',
     },
-    'obz2mns1': {
-      'en': '7',
+    '4efkwy6h': {
+      'en': 'Supported',
       'sw': '',
     },
-    'wgeyv7gy': {
-      'en': 'Join Us',
+    '8v04o9ly': {
+      'en': '26',
       'sw': '',
     },
-    'vy4tmnya': {
-      'en': 'RESEARCH COST',
-      'sw': '',
-    },
-    '8rcvcjtj': {
-      'en': 'Suppoerted by:Serene Microfinance Ltd',
-      'sw': '',
-    },
-    'p5tonmj0': {
-      'en': 'Waiting',
-      'sw': '',
-    },
-    'vk2qmjyz': {
-      'en': '20,000',
-      'sw': '',
-    },
-    'uw4x09dk': {
+    '6nifizz7': {
       'en': '0',
       'sw': '',
     },
-    'ymts7f0x': {
-      'en': 'Join Us',
+    'htcz4a3c': {
+      'en': 'Pins',
       'sw': '',
     },
-    'gl514ppy': {
-      'en': 'Printing Works',
+    '9q5wmwsr': {
+      'en': '11',
       'sw': '',
     },
-    'r3816i2f': {
-      'en': 'Suppoerted by: Africab and 3 others',
+    'tx046tw0': {
+      'en': 'Support',
       'sw': '',
     },
-    'hli9mg38': {
-      'en': 'Funded',
+    '9vpjvg4n': {
+      'en': 'NAULI',
       'sw': '',
     },
-    'dvbd8amq': {
-      'en': '20,000',
+    '7gxcdjuu': {
+      'en': 'Suppoerted by: Tambuu Motors and 3 others',
       'sw': '',
     },
-    'giwnsfob': {
+    'vmdmoqm0': {
+      'en': 'Awarded',
+      'sw': '',
+    },
+    'hpfkfxpv': {
+      'en': '200,000',
+      'sw': '',
+    },
+    't8krervo': {
+      'en': 'Supported',
+      'sw': '',
+    },
+    'lqmrgp17': {
+      'en': '26',
+      'sw': '',
+    },
+    'h2u3o4wq': {
       'en': '0',
       'sw': '',
     },
-    'v3ghxgxk': {
-      'en': 'Join Us',
+    '3qzn6r69': {
+      'en': 'Pins',
+      'sw': '',
+    },
+    'lv1326jy': {
+      'en': '11',
+      'sw': '',
+    },
+    'bsnq4jit': {
+      'en': 'Support',
+      'sw': '',
+    },
+    'gwzhy8nx': {
+      'en': 'NAULI',
+      'sw': '',
+    },
+    'hprn7pic': {
+      'en': 'Suppoerted by: Tambuu Motors and 3 others',
+      'sw': '',
+    },
+    '9i5pnimd': {
+      'en': 'Awarded',
+      'sw': '',
+    },
+    'oatt6qri': {
+      'en': '200,000',
+      'sw': '',
+    },
+    '0k7iwy7z': {
+      'en': 'Supported',
+      'sw': '',
+    },
+    'jhw4ig67': {
+      'en': '26',
+      'sw': '',
+    },
+    '5q29jp4l': {
+      'en': '0',
+      'sw': '',
+    },
+    'knk0d2uf': {
+      'en': 'Pins',
+      'sw': '',
+    },
+    '9zoibkso': {
+      'en': '11',
+      'sw': '',
+    },
+    'qxk334sj': {
+      'en': 'Support',
       'sw': '',
     },
     'oqfj37ru': {
@@ -821,11 +675,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'sw': '',
     },
     'u1awqk3o': {
-      'en': 'Profile Settings',
-      'sw': '',
-    },
-    'qi6qor9i': {
-      'en': 'Edit Profile',
+      'en': 'Business account Setting',
       'sw': '',
     },
     'fxgd4ir6': {
@@ -842,6 +692,10 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     'ddb42ejk': {
       'en': 'Pandefy',
+      'sw': '',
+    },
+    'x2g6fq0m': {
+      'en': 'Create Request',
       'sw': '',
     },
     'rg0e8lsz': {
@@ -875,63 +729,63 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'Add to  Cart',
       'sw': '',
     },
-    'we2hkb52': {
-      'en': 'Mkopo kwa Vikundi',
+    'kp749s05': {
+      'en': 'Web Development package',
       'sw': '',
     },
-    '6f9lwhku': {
-      'en': 'Tsh 1,000,000',
-      'sw': '',
-    },
-    'oipqzqlv': {
-      'en': 'Karibu tukuhudumie leo Express',
-      'sw': '',
-    },
-    'fvbj73it': {
-      'en': 'Buy',
-      'sw': '',
-    },
-    '5z4icahm': {
-      'en': 'Add to  Cart',
-      'sw': '',
-    },
-    '6yxtk8p8': {
-      'en': 'Lipa Mdogo Mdogo Gas',
-      'sw': '',
-    },
-    'ait0aovq': {
+    'jutemyae': {
       'en': 'Tsh 25,000',
       'sw': '',
     },
-    '5yjwxz35': {
+    'kdsfv3ax': {
       'en': 'Okoa muda kwakutumia Gas, Ondokana na usumbufu',
       'sw': '',
     },
-    'qzfx3ncr': {
+    '6tmkpfjf': {
       'en': 'Buy',
       'sw': '',
     },
-    'n4u6j7ce': {
+    '1zsf393l': {
       'en': 'Add to  Cart',
       'sw': '',
     },
-    '36jbhie8': {
-      'en': 'Gas Fasta',
+    'l6p9o8t8': {
+      'en': 'Web Development package',
       'sw': '',
     },
-    '80ocwfzk': {
+    'iaqopjsl': {
       'en': 'Tsh 25,000',
       'sw': '',
     },
-    'saz8g914': {
+    'vxvo67aq': {
       'en': 'Okoa muda kwakutumia Gas, Ondokana na usumbufu',
       'sw': '',
     },
-    'xs0aqsz0': {
+    'ohum47uk': {
       'en': 'Buy',
       'sw': '',
     },
-    '2ymuozlf': {
+    'o1rfrax2': {
+      'en': 'Add to  Cart',
+      'sw': '',
+    },
+    'sjgrnr5s': {
+      'en': 'Web Development package',
+      'sw': '',
+    },
+    'm57l9wjy': {
+      'en': 'Tsh 25,000',
+      'sw': '',
+    },
+    'rkf89vec': {
+      'en': 'Okoa muda kwakutumia Gas, Ondokana na usumbufu',
+      'sw': '',
+    },
+    '4y59yhkg': {
+      'en': 'Buy',
+      'sw': '',
+    },
+    'uhy6pllr': {
       'en': 'Add to  Cart',
       'sw': '',
     },
@@ -942,7 +796,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   },
   // comment
   {
-    '5m1swqtl': {
+    'lgirp7sg': {
       'en': 'Comments',
       'sw': '',
     },
@@ -1133,7 +987,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'Create Request',
       'sw': '',
     },
-    'ww8u1aw7': {
+    'jyk5ciqx': {
       'en': 'Creting Request',
       'sw': '',
     },
@@ -1213,6 +1067,49 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     'qusnh34u': {
       'en': 'Funded',
+      'sw': '',
+    },
+  },
+  // paymentoption
+  {
+    't6mqy82v': {
+      'en': 'Choose your preferred payment option',
+      'sw': '',
+    },
+    'yli9eo5k': {
+      'en': 'M-Pesa',
+      'sw': '',
+    },
+    'rp6qdjt4': {
+      'en': 'Vodacom Tanzania',
+      'sw': '',
+    },
+    'qwohj505': {
+      'en': 'Tigo Pesa',
+      'sw': '',
+    },
+    '7qbeizr8': {
+      'en': 'Tigo Tanzania',
+      'sw': '',
+    },
+    '75hkmizj': {
+      'en': 'Airtel Money',
+      'sw': '',
+    },
+    'efv9x52v': {
+      'en': 'Airtel Tanzania',
+      'sw': '',
+    },
+    'ozllge6t': {
+      'en': 'CARD ',
+      'sw': '',
+    },
+    'gojjsluu': {
+      'en': 'Pay Via Card',
+      'sw': '',
+    },
+    '20ewt1pu': {
+      'en': 'Proceed to Payment',
       'sw': '',
     },
   },

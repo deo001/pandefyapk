@@ -1,14 +1,18 @@
 import '/flutter_flow/flutter_flow_util.dart';
-import 'filter_widget.dart' show FilterWidget;
+import 'awardes_offers_widget.dart' show AwardesOffersWidget;
 import 'package:flutter/material.dart';
 
-class FilterModel extends FlutterFlowModel<FilterWidget> {
+class AwardesOffersModel extends FlutterFlowModel<AwardesOffersWidget> {
   ///  State fields for stateful widgets in this page.
 
   // State field(s) for TextField widget.
   FocusNode? textFieldFocusNode;
   TextEditingController? textController;
   String? Function(BuildContext, String?)? textControllerValidator;
+  // State field(s) for TabBar widget.
+  TabController? tabBarController;
+  int get tabBarCurrentIndex =>
+      tabBarController != null ? tabBarController!.index : 0;
 
   @override
   void initState(BuildContext context) {}
@@ -17,5 +21,7 @@ class FilterModel extends FlutterFlowModel<FilterWidget> {
   void dispose() {
     textFieldFocusNode?.dispose();
     textController?.dispose();
+
+    tabBarController?.dispose();
   }
 }

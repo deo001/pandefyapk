@@ -102,24 +102,14 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           ),
         ),
         FFRoute(
-          name: 'offers',
-          path: '/offers',
-          builder: (context, params) => const OffersWidget(),
-        ),
-        FFRoute(
-          name: 'filter',
-          path: '/filter',
-          builder: (context, params) => const FilterWidget(),
+          name: 'awardes_offers',
+          path: '/awardesOffers',
+          builder: (context, params) => const AwardesOffersWidget(),
         ),
         FFRoute(
           name: 'catalogsDetails',
           path: '/catalogsDetails',
           builder: (context, params) => const CatalogsDetailsWidget(),
-        ),
-        FFRoute(
-          name: 'requests',
-          path: '/requests',
-          builder: (context, params) => const RequestsWidget(),
         ),
         FFRoute(
           name: 'homepage',
